@@ -32,4 +32,20 @@ export class ActionController {
             return res.status(400).json({ error: error.message });
         }
     }
+
+    static async update(req: Request, res: Response) {
+        try {
+            return res.status(200).json({ message: 'Update' });
+        } catch (error: any) {
+            return res.status(400).json({ error: error.message });
+        }
+    }
+
+    static async delete(req: Request, res: Response) {
+        try {
+            return res.status(200).json({ message: 'Delete' });
+        } catch (error: any) {
+            return res.status(400).json({ error: error.message });
+        }
+    }
 }
