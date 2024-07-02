@@ -12,7 +12,15 @@
         "baseUrl": ".",
         "paths": {
             "@/*": ["./src/*"]
-        }
+        },
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules", // auto-genertes virtual .d.ts for an every css file
+                "options": {
+                    "customTemplate": "./customTemplate.js"
+                }
+            }
+        ]
     },
     "ts-node": {
         "compilerOptions": {

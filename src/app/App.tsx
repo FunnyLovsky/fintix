@@ -1,7 +1,8 @@
+import { MainPage } from '@/pages/Main'
 import './styles/index.scss'
 
 const App = () => {
-    return <h1>Hello Fintix!</h1>
+    return <MainPage />
 }
 
 export default App
