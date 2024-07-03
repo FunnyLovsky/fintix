@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",
+        "outDir": "./build/",
         "noImplicitAny": true,
         "module": "ESNext",
         "target": "es5",
@@ -16,9 +16,9 @@
         "plugins": [
             {
                 "name": "typescript-plugin-css-modules", // auto-genertes virtual .d.ts for an every css file
-                "options": {
-                    "customTemplate": "./customTemplate.js"
-                }
+                // "options": {
+                //     "customTemplate": "./customTemplate.js"
+                // }
             }
         ]
     },
